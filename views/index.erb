@@ -1,13 +1,18 @@
 <% if @profile %>
-  <h3><%= @profile["first_name"] %>'s Amazing Profile</h3>
-
+  <h3 id="header">
+  	<div id="logo">
+  		<img src="/images/logo.png" alt="We Got Coders"  />
+  	</div>
+  </h3>	
+  
   <!-- TODO- Perhaps re-jig this to fit your new design / layout -->
   <% @profile.each do |field, value| %>
-    <div class="profile-section box">
+    <div class="profile-section">
       <h4><%= field %></h4>
-      <p class="profile-value"><%= value %></p>
+      <li class="profile-value"><%= value %></li><br>
     </div>
   <% end %>
+  
 
   <div id="stats" class="box">
     <h3>Stats</h3>
@@ -20,28 +25,41 @@
     <a href="/primes">My Prime Number Solution</a>
   </div>
 
-  <div class="box">
-    <h3>Edit Profile</h3>
+  
+  <div id="me-wrapper" class="float-right">
+    <div id="j-profile">
+     <h3><%= @profile["first_name"] %>'s Amazing Profile</h3>
+    </div>
+    <div id="me">
+       <img src="/images/me.jpeg"/>
+    </div>
 
-    <form action="/update" method="POST">
-      <fieldset>
-        <div class="form-group">
-          <label for="trainee[about]">About</label>
-          <input type="text" name="trainee[about]" value="<%= @profile["about"] %>"/>
-        </div>
+	  <div id="edit_box">
+	    <h3>Edit Profile</h3>
 
-        <!-- TODO - Add more fields so that your profile can be edited -->
+	    <form action="/update" method="POST">
+	      <fieldset>
+	        <div class="form-group">
+	          <label for="trainee[about]">About</label>
+	          <input id="size" type="text" name="trainee[about]" value="<%= @profile["about"] %>"/>
+	        </div><br>
 
-        <input type="submit" value="Update Profile" class="btn btn-primary" />
-      </fieldset>
-    </form>
-  </div>
+	        <!-- TODO - Add more fields so that your profile can be edited -->
+
+	        <input type="submit" value="Update Profile" class="btn btn-primary" />
+	      </fieldset>
+	    </form>
+	    <br><br>
+	  </div>
+   <div>
+
 <% else %>
   <div class="welcome">
     <p>Welcome! Once you have updated the OAuth tokens, the link below will fetch your profile information.</p>
 
     <a href="/authorise">Authorise</a>
   </div>
+  
 <% end %>
 
 

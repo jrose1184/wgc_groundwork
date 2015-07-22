@@ -3,21 +3,38 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 #logo {
-  text-align: center;
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  left: 50%;
+  top: 0%;
+  margin-left: 200px;
 }
 
 #content {
   padding: 1em;
+  width: 60%;
+  display:block;
 }
 
 .box {
-  border: 1px solid #999;
-  background: #FCFCFC;
+  border: 3px solid #999;
+  background: #D3D3D3;
   padding: 1em;
   margin-bottom: 0.5em;
+  width: 1400px;
+  margin-top: 5px;
 }
 
 .welcome {
@@ -37,3 +54,66 @@ h3 {
 }
 
 /* TODO - Add your own styles here */
+
+
+.profile-value{
+  color: #867970;
+}
+
+.form-group{
+  color: red;
+}
+
+.profile-section{
+  color: black;
+  font-size: 20px;
+  width: 90%;
+  font-family: sans-serif;
+  border: 2px solid black;
+  padding: 2em;
+  margin-top: 4px;
+  background: #D3D3D3;
+  border-radius: 15px;
+  margin-right: 2px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+#header{
+  color: #EE3B3B;
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  left: 50%;
+  top: 0%;
+  margin-left: 300px; 
+  margin-top: 280px;
+
+}
+
+#edit_box{
+  color: #EE3B3B;
+
+ }
+
+#size{
+  width: 260px;
+}
+
+
+#me-wrapper {
+      display: inline-block;
+    width: 25%;
+    position: fixed;
+    right: 9%;
+    top: 140px;
+
+}
+
+
