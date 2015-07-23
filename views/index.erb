@@ -4,7 +4,7 @@
   		<img src="/images/logo.png" alt="We Got Coders"  />
   	</div>
   </h3>	
-  
+
   <!-- TODO- Perhaps re-jig this to fit your new design / layout -->
   <% @profile.each do |field, value| %>
     <div class="profile-section">
@@ -69,9 +69,16 @@
 
   var profile_values = document.getElementsByClassName('profile-value');
   var total_words = 0;
+  var word = "";
 
   // TODO - Count the number of words in the profile.
   // hint - look at what the innerHTML property provides.
+  for(i=0;i<profile_values.length;i++){
+  	word = profile_values[i].innerHTML;
+  	var length = word.split(" ").length;
+  	total_words = total_words + length;
+  	
+  }
 
   document.getElementById('word-count').innerHTML = total_words;
 </script>
