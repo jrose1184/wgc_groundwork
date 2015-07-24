@@ -1,4 +1,7 @@
 <% if @profile %>
+<a class="links" href="http://www.wegotcoders.com">WeGotCoders</a>
+<a class="links" href="https://twitter.com/wegotcoders">WGC Twitter</a>
+<a class="links" href="https://www.facebook.com/wegotcoders">WGC Facebook</a>
   <h3 id="header">
   	<div id="logo">
   		<img src="/images/logo.png" alt="We Got Coders"  />
@@ -23,12 +26,13 @@
   <div id="problems" class="box">
     <h3>Programming Problems</h3>
     <a href="/primes">My Prime Number Solution</a>
+
   </div>
 
   
   <div id="me-wrapper" class="float-right">
     <div id="j-profile">
-     <h3><%= @profile["first_name"] %>'s Amazing Profile</h3>
+     <h3 style="color: #CD3333"><%= @profile["first_name"] %>'s Amazing Profile</h3>
     </div>
     <div id="me">
        <img src="/images/me.jpeg"/>
@@ -45,8 +49,13 @@
 	        </div><br>
 
 	        <!-- TODO - Add more fields so that your profile can be edited -->
-
+          <div id="codeacad">
+          <label for="trainee[codecademy]">codecademy</label>
+          <input id="s" type="text" name="trainee[codecademy]" value="<%= @profile["codecademy"] %>"/><br><br>
+          <label for="trainee[twitter]">twitter</label>
+          <input id="s" type="text" name="trainee[twitter]" value="<%= @profile["twitter"] %>"/>
 	        <input type="submit" value="Update Profile" class="btn btn-primary" />
+          </div>
 	      </fieldset>
 	    </form>
 	    <br><br>

@@ -71,7 +71,7 @@ h3 {
   font-family: sans-serif;
   border: 2px solid black;
   padding: 2em;
-  margin-top: 4px;
+  margin-top: 10px;
   background: #D3D3D3;
   border-radius: 15px;
   margin-right: 2px;
@@ -116,4 +116,30 @@ h3 {
 
 }
 
+.links {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 30px;
+  background-color: grey;
+  color: #CD3333;
+  margin-left: 35px;
+}
+
+#size{
+color: red;
+display: inline-block;
+}
+
+#s{
+  color:red;
+  display: inline-block;
+}
+
+#codeacad{
+  margin-bottom: 1px;
+  display: inline-block;
+}
 
