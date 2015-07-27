@@ -108,15 +108,16 @@ h3 {
 
 
 #me-wrapper {
-      display: inline-block;
+    display: inline-block;
     width: 25%;
     position: fixed;
     right: 9%;
     top: 140px;
+    
 
 }
 
-.links {
+#fb {
   display: inline-block;
   text-decoration: none;
   border: 1px solid black;
@@ -127,7 +128,29 @@ h3 {
   color: #CD3333;
   margin-left: 35px;
 }
+#wgc {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 30px;
+  background-color: grey;
+  color: #CD3333;
+  margin-left: 35px;
 
+}
+#twit {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 30px;
+  background-color: grey;
+  color: #CD3333;
+  margin-left: 35px;
+}
 #size{
 color: red;
 display: inline-block;
@@ -136,10 +159,13 @@ display: inline-block;
 #s{
   color:red;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 #codeacad{
   margin-bottom: 1px;
   display: inline-block;
 }
+
+
 
